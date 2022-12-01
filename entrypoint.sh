@@ -19,6 +19,7 @@ WORKDIR=${SRCDIR:-/src}
 
 SPEC_FILE=${4:-*.spec}
 
+python --version
 python -m pip install --upgrade pip wheel setuptools
 
 #
