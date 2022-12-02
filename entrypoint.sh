@@ -19,8 +19,8 @@ WORKDIR=${SRCDIR:-/src}
 
 SPEC_FILE=${4:-*.spec}
 
-python --version
-python -m pip install --upgrade pip wheel setuptools
+python3 --version
+python3 -m pip install --upgrade pip wheel setuptools
 
 #
 # In case the user specified a custom URL for PYPI, then use
