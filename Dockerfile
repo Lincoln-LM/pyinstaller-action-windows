@@ -37,7 +37,7 @@ RUN set -x \
     && winetricks win7 \
     && for msifile in `echo core dev exe lib path pip tcltk tools`; do \
         wget -nv "https://www.python.org/ftp/python/$PYTHON_VERSION/amd64/${msifile}.msi"; \
-        wine msiexec /i "${msifile}.msi" /qb TARGETDIR=C:/Python310; \
+        wine msiexec /i "${msifile}.msi" /qb TARGETDIR=C:/Python311; \
         rm ${msifile}.msi; \
     done \
     && cd /wine/drive_c/Python311 \
