@@ -29,9 +29,6 @@ outputs:
   output:
     description: 'The output of PyInstaller'
 
-uses: actions/setup-python@v4
-  with:
-    python-version: '3.11' 
 runs:
   using: 'docker'
   image: 'Dockerfile'
