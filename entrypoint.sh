@@ -41,7 +41,6 @@ if [[ "$PYPI_URL" != "https://pypi.python.org/" ]] || \
 fi
 
 cd $WORKDIR
-apt install binutils
 
 if [ -f $5 ]; then
     pip install -r $5
