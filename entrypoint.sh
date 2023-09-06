@@ -40,7 +40,7 @@ if [[ "$PYPI_URL" != "https://pypi.python.org/" ]] || \
 fi
 
 cd $WORKDIR
-ls # :)
+pip install numba_pokemon_prngs.whl
 if [ -f $5 ]; then
     pip install -r $5
 fi # [ -f $5 ]
