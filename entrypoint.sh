@@ -41,6 +41,7 @@ fi
 
 cd $WORKDIR
 pip install numba_pokemon_prngs-0.1.0-py3-none-any.whl
+git submodule update --init --recursive
 if [ -f $5 ]; then
     pip install -r $5
 fi # [ -f $5 ]
